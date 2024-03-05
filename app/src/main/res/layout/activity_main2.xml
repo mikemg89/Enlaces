@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity2">
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/img_logo2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_corp" />
+
+    <Button
+        android:id="@+id/btn_asis_centro"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="CENTRO"
+        android:textColor="@color/white"
+        android:textFontWeight="@integer/material_motion_duration_medium_2"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_asis_norte"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_asis_norte" />
+
+    <Button
+        android:id="@+id/btn_asis_norte"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="NORTE"
+        android:textColor="@color/white"
+        android:textFontWeight="@integer/material_motion_duration_medium_2"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_asis_sur"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_asis_centro"
+        app:layout_constraintTop_toBottomOf="@+id/img_logo2" />
+
+    <Button
+        android:id="@+id/btn_asis_sur"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="SUR"
+        android:textColor="@color/white"
+        android:textFontWeight="@integer/material_motion_duration_medium_2"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_asis_norte"
+        app:layout_constraintTop_toTopOf="@+id/btn_asis_norte" />
+
+    <Button
+        android:id="@+id/btn_asis_occ"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="OCCIDENTAL"
+        android:textColor="@color/white"
+        android:textFontWeight="@integer/material_motion_duration_medium_2"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_asis_rio"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_asis_ori"
+        app:layout_constraintTop_toBottomOf="@+id/btn_asis_norte" />
+
+    <Button
+        android:id="@+id/btn_asis_ori"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="ORIENTAL"
+        android:textColor="@color/white"
+        android:textFontWeight="@integer/material_motion_duration_medium_2"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_asis_occ"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_asis_centro" />
+
+    <Button
+        android:id="@+id/btn_asis_rio"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="RIONEGRO"
+        android:textColor="@color/white"
+        android:textFontWeight="@integer/material_motion_duration_medium_2"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_asis_occ"
+        app:layout_constraintTop_toBottomOf="@+id/btn_asis_sur" />
+
+    <Button
+        android:id="@+id/btn_asis_soa"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="SOACHA"
+        android:textColor="@color/white"
+        android:textFontWeight="@integer/material_motion_duration_medium_2"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_asis_cali"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_asis_ura"
+        app:layout_constraintTop_toBottomOf="@+id/btn_asis_occ" />
+
+    <Button
+        android:id="@+id/btn_asis_ura"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="URABA"
+        android:textColor="@color/white"
+        android:textFontWeight="@integer/material_motion_duration_medium_2"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_asis_soa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_asis_ori" />
+
+    <Button
+        android:id="@+id/btn_asis_cali"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="CALI"
+        android:textColor="@color/white"
+        android:textFontWeight="@integer/material_motion_duration_medium_2"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_asis_soa"
+        app:layout_constraintTop_toBottomOf="@+id/btn_asis_rio" />
+
+    <Button
+        android:id="@+id/btn_asis_dor"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="DORADAL"
+        android:textColor="@color/white"
+        android:textFontWeight="@integer/material_motion_duration_medium_2"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_asis_soa"
+        app:layout_constraintStart_toEndOf="@+id/btn_asis_ura"
+        app:layout_constraintTop_toBottomOf="@+id/btn_asis_ura" />
+
+    <Button
+        android:id="@+id/btn_asis_boya"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="BOYACÁ"
+        android:textColor="@color/white"
+        android:textFontWeight="@integer/material_motion_duration_medium_2"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_asis_cali"
+        app:layout_constraintStart_toEndOf="@+id/btn_asis_soa"
+        app:layout_constraintTop_toBottomOf="@+id/btn_asis_cali" />
+
+    <ImageButton
+        android:id="@+id/btnback_asist"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

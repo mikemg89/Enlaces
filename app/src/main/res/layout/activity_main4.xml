@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity4">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_corp" />
+
+    <Button
+        android:id="@+id/btn_trans_exp"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="COOR. EXPANSIÓN"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_trans_yenn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_trans_coor"
+        app:layout_constraintTop_toBottomOf="@+id/btn_trans_valle" />
+
+    <Button
+        android:id="@+id/btn_trans_norte"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="NORTE"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_trans_centro"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_trans_sur"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <Button
+        android:id="@+id/btn_trans_occ"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="OCCIDENTE"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_trans_ura"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_trans_ori"
+        app:layout_constraintTop_toBottomOf="@+id/btn_trans_norte" />
+
+    <Button
+        android:id="@+id/btn_trans_valle"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="VALLE DEL CAUCA"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_trans_cun"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_trans_sem"
+        app:layout_constraintTop_toBottomOf="@+id/btn_trans_occ" />
+
+    <Button
+        android:id="@+id/btn_trans_micro1"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="MICRO CRÉDITO 1"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_trans_exp"
+        app:layout_constraintStart_toEndOf="@+id/btn_trans_coor"
+        app:layout_constraintTop_toBottomOf="@+id/btn_trans_coor" />
+
+    <Button
+        android:id="@+id/btn_trans_sur"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="SUR"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_trans_norte"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_trans_norte" />
+
+    <Button
+        android:id="@+id/btn_trans_ori"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="ORIENTE"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_trans_occ"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_trans_sur" />
+
+    <Button
+        android:id="@+id/btn_trans_coor"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="COORDINADORES"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_trans_exp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_trans_sem" />
+
+    <Button
+        android:id="@+id/btn_trans_sem"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="SEMBRADORES"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_trans_valle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_trans_ori" />
+
+    <Button
+        android:id="@+id/btn_trans_micro2"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="MICRO CRÉDITO 2"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_trans_yenn"
+        app:layout_constraintStart_toEndOf="@+id/btn_trans_exp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_trans_yenn" />
+
+    <Button
+        android:id="@+id/btn_trans_centro"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="CENTRO"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_trans_norte"
+        app:layout_constraintTop_toTopOf="@+id/btn_trans_norte" />
+
+    <Button
+        android:id="@+id/btn_trans_ura"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="URABÁ"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_trans_occ"
+        app:layout_constraintTop_toBottomOf="@+id/btn_trans_centro" />
+
+    <Button
+        android:id="@+id/btn_trans_cun"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="CUNDINAMARCA"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_trans_valle"
+        app:layout_constraintTop_toBottomOf="@+id/btn_trans_ura" />
+
+    <Button
+        android:id="@+id/btn_trans_yenn"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="YENNIFER PINTO"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_trans_exp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_trans_cun" />
+
+    <ImageButton
+        android:id="@+id/btnback_trans"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
